@@ -16,10 +16,8 @@ public class Practice_cat_dog {
 
         for (Animal animal : animals) {
             animal.sound();
-            // expected: I'am a Dog. My name is Tuzik. Gav
-            // expected: I'am a Cat. My name Vasya. Mew
+            // expected: I'm a Dog. My name is Tuzik. Gav
+            // expected: I'm a Cat. My name is Vasya. Mew
         }
-
-
     }
 }
