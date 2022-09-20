@@ -1,5 +1,7 @@
 package Lessons.lesson12;
 
+import java.util.Scanner;
+
 public class operBreak {
     public static void main(String[] args) {
 //        int i = 1;
@@ -23,11 +25,11 @@ public class operBreak {
 //        }
 
 
-//        int number = 2;
+//        int number = 1;
 //        switch (number) {
 //            case 1:
 //                System.out.println("Число 1");
-//                break;
+//
 //            case 2:
 //                System.out.println("Число 2");
 //                break;
@@ -35,6 +37,19 @@ public class operBreak {
 //                System.out.println("Число 3");
 //                break;
 //
+//        }
+
+//        System.out.println("Вевдите число 1");
+//        Scanner scanner = new Scanner(System.in);
+//        int number = scanner.nextInt();
+//
+//        switch (number) {
+//            case 1:
+//                System.out.println("Вы ввели 1");
+//
+//            default:
+//                System.out.println("Вы ввели неверное число");
+//                break;
 //        }
     }
 }
