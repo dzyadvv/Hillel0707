@@ -4,7 +4,7 @@ public class Outer {
 
     int num;
 
-    private static class InnerDemo {
+    private class InnerDemo {
         public void print() {
             System.out.println("Это внутренний класс");
         }

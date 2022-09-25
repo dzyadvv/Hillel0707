@@ -22,9 +22,11 @@ public class MyArrayList {
 //        System.out.println(name.indexOf("Alex")); // 0
 //        System.out.println(name.indexOf("Ira")); // -1
 
-        name.remove("Alex");
-        System.out.println(name.get(0));
+//        name.remove("Alex");
+//        System.out.println(name.get(0));
         name.remove(0);
         System.out.println(name.get(0));
+
+        System.out.println(name);
     }
 }

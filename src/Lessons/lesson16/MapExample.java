@@ -54,5 +54,7 @@ public class MapExample {
 //            // Sasha - 2.09.1999
 //        }
 
+        System.out.println(myHashMap.size());
+
     }
 }

@@ -2,6 +2,7 @@ package Lessons.lesson13.abstractExample;
 
 public class Bmw extends Car {
 
+  
     @Override
     String maxSpeed() {
         return null;

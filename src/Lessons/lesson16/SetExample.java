@@ -11,13 +11,17 @@ public class SetExample {
         myHash.add(2);
         myHash.add(3);
 
-        System.out.println(myHash.contains(1)); // true
+        for (int i : myHash) {
+            System.out.print(i);
+        }
 
-        System.out.println("Hashset is empty? - " + myHash.isEmpty()); // false
-
-
-        // myHash.add(1);
-        // не выводится, потому что хэшсет хранит только уникальные значения
+//        System.out.println(myHash.contains(1)); // true
+//
+//        System.out.println("Hashset is empty? - " + myHash.isEmpty()); // false
+//
+//
+//        myHash.add(1);
+//        //не выводится, потому что хэшсет хранит только уникальные значения
 
         System.out.println("Before remove:");
         for (Integer i : myHash) {
@@ -36,10 +40,10 @@ public class SetExample {
         System.out.println(myHash.contains(1)); // false
 
         System.out.println(myHash.size()); // 2
-
-        myHash.clear(); // удаляет все эелементы из сета
-        System.out.println(myHash.size()); // 0
-
-        System.out.println("Hashset is empty? - " + myHash.isEmpty()); // true
+//
+//        myHash.clear(); // удаляет все эелементы из сета
+//        System.out.println(myHash.size()); // 0
+//
+//        System.out.println("Hashset is empty? - " + myHash.isEmpty()); // true
     }
 }

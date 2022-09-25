@@ -5,7 +5,8 @@ public enum Country {
     CANADA("CAD"),
     POLAND("PLN"),
     GERMANY("EUR"),
-    ZIMBAVU;
+    ZIMBAVU,
+    LAOPAPAS();
 
     String currency;
 

@@ -12,7 +12,7 @@ public class myException extends Exception {
     public String toString() { // позволяет преобразовать объект в стринговый вид
         return "myException{" +
                 "detail=" + detail +
-                " " + getMessage() +
+                ", message= " + getMessage() +
                 '}';
     }
 }

@@ -15,6 +15,7 @@ public class Dog {
         System.out.println("Это нестатический блок инициализации");
     }
 
+
     public Dog(String name, String poroda, int age) {
         System.out.println("i am here");
         this.name = name;

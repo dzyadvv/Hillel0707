@@ -4,7 +4,7 @@ public class myExceptionDemo {
 
     public static void main(String[] args) {
         try {
-            compute(9);
+            //compute(9);
             compute(11);
         } catch (myException e) {
             System.err.print("Перехваченное исключение " + e);
