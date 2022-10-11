@@ -14,7 +14,7 @@ public class QueueExmpl {
 //        queue.add(3);
 //        queue.offer(22);
 //
-//        queue.remove();
+//        queue.remove(2);
 //        // queue.poll();
 //
 //        for (int i : queue) {
@@ -38,35 +38,37 @@ public class QueueExmpl {
 //        System.out.println(queue.poll()); // null
 
 
-//        Queue<String> queue = new PriorityQueue<>();
-//        queue.add("бананы");
-//        queue.add("яблоки");
-//        queue.add("ананасы");
-//
-//        while (!queue.isEmpty()) {
-//            System.out.println(queue.poll());
-//        }
-//        // ананасы
-//        // бананы
-//        // яблоки
-//
-//        System.out.println(queue.poll());
-
-
-        Queue<Boolean> queue = new PriorityQueue<>();
-
-        queue.add(true);
-        queue.add(false);
-        queue.add(true);
-
+        Queue<String> queue = new PriorityQueue<>();
+        queue.add("бананы");
+        queue.add("яблоки");
+        queue.add("ананасы");
 
         while (!queue.isEmpty()) {
             System.out.println(queue.poll());
         }
-        //false
-        //true
-        //true
+        // ананасы
+        // бананы
+        // яблоки
+        System.out.println();
+
+        System.out.println(queue.poll());
 
 
+//        Queue<Boolean> queue = new PriorityQueue<>();
+//
+//        queue.add(true);
+//        queue.add(false);
+//        queue.add(true);
+//
+//
+//        while (!queue.isEmpty()) {
+//            System.out.println(queue.poll());
+//        }
+//        //false
+//        //true
+//        //true
+//
+//
+//    }
     }
 }
