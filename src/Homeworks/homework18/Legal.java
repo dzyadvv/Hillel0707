@@ -10,25 +10,25 @@ public class Legal extends aClient {
 
     @Override
     void accountInfo() {
-        iMessages.balanceInfo(balance);
-        iMessages.feeInfo();
-        iMessages.noFillFee();
-        iMessages.feeWithdraw(feeWithdraw);
+        aMessages.balanceInfo(balance);
+        aMessages.feeInfo();
+        aMessages.noFillFee();
+        aMessages.feeWithdraw(feeWithdraw);
     }
 
     @Override
     double putIntoAccount() {
-        iMessages.putIntoAccount();
+        aMessages.putIntoAccount();
         return scanner.nextInt();
     }
 
     //У юридических лиц — снятие с комиссией 1%.
     @Override
     double withdraw() {
-        iMessages.withdraw();
+        aMessages.withdraw();
         double takeCash = scanner.nextInt();
         double fee = takeCash * feeWithdraw;
-        iMessages.feeTotal(fee);
+        aMessages.feeTotal(fee);
         takeCash += fee;
         return takeCash;
     }
@@ -36,7 +36,7 @@ public class Legal extends aClient {
     @Override
     void accountBalance(double putCash, double takeCash) {
         balance += putCash - takeCash;
-        iMessages.balanceInfo(balance);
-        iMessages.paragraph();
+        aMessages.balanceInfo(balance);
+        aMessages.paragraph();
     }
 }

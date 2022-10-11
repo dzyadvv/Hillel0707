@@ -2,7 +2,7 @@ package Homeworks.homework18;
 
 import java.util.Scanner;
 
-public class PhysicalPerson extends aClient implements iMessages {
+public class PhysicalPerson extends aClient {
 
     Scanner scanner = new Scanner(System.in);
 
@@ -10,28 +10,28 @@ public class PhysicalPerson extends aClient implements iMessages {
 
     @Override
     void accountInfo() {
-        iMessages.balanceInfo(balance);
-        iMessages.noFillFee();
-        iMessages.noWithdrawFee();
+        aMessages.balanceInfo(balance);
+        aMessages.noFillFee();
+        aMessages.noWithdrawFee();
     }
 
     @Override
     double putIntoAccount() {
-        iMessages.putIntoAccount();
+        aMessages.putIntoAccount();
         return scanner.nextInt();
     }
 
     @Override
     double withdraw() {
-        iMessages.withdraw();
+        aMessages.withdraw();
         return scanner.nextInt();
     }
 
     @Override
     void accountBalance(double putCash, double takeCash) {
         balance += putCash - takeCash;
-        iMessages.balanceInfo(balance);
-        iMessages.paragraph();
+        aMessages.balanceInfo(balance);
+        aMessages.paragraph();
     }
 
 }

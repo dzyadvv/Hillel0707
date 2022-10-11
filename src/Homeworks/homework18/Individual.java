@@ -12,35 +12,35 @@ public class Individual extends aClient {
 
     @Override
     void accountInfo() {
-        iMessages.balanceInfo(balance);
-        iMessages.feeInfo();
-        iMessages.feePutLessValue(feePutLess, feePutBoundaryValue);
-        iMessages.feePutGreaterEqual(feeGreaterOrEqual, feePutBoundaryValue);
-        iMessages.noWithdrawFee();
+        aMessages.balanceInfo(balance);
+        aMessages.feeInfo();
+        aMessages.feePutLessValue(feePutLess, feePutBoundaryValue);
+        aMessages.feePutGreaterEqual(feeGreaterOrEqual, feePutBoundaryValue);
+        aMessages.noWithdrawFee();
     }
 
     //ИП — пополнение с комиссией 1%, если сумма меньше 1000 $. И с комиссией 0,5%, если сумма больше либо равна 1000 $.
     @Override
     double putIntoAccount() {
-        iMessages.putIntoAccount();
+        aMessages.putIntoAccount();
         double putCash = scanner.nextInt();
         double fee = putCash < feePutBoundaryValue ? putCash * feePutLess : putCash * feeGreaterOrEqual;
-        iMessages.feeTotal(fee);
+        aMessages.feeTotal(fee);
         putCash -= fee;
         return putCash;
     }
 
     @Override
     double withdraw() {
-        iMessages.withdraw();
+        aMessages.withdraw();
         return scanner.nextInt();
     }
 
     @Override
     void accountBalance(double putCash, double takeCash) {
         balance += putCash - takeCash;
-        iMessages.balanceInfo(balance);
-        iMessages.paragraph();
+        aMessages.balanceInfo(balance);
+        aMessages.paragraph();
     }
 
 }

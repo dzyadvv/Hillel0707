@@ -1,6 +1,6 @@
 package Homeworks.homework18;
 
-public interface iMessages {
+public abstract class aMessages {
 
     static void balanceInfo(double balance) {
         System.out.println("На Вашем счете " + balance + "$.");
@@ -51,3 +51,4 @@ public interface iMessages {
         System.out.println();
     }
 }
+
