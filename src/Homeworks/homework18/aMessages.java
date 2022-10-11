@@ -42,11 +42,6 @@ public abstract class aMessages {
         System.out.println("Снять денежные средства: ");
     }
 
-    static void notEnoughMoney(double balance) {
-        System.out.println("На Вашем счете недостаточно средств для осуществления данной операции. \n" +
-                "Введите сумму меньшую либо равную " + balance + ":");
-    }
-
     static void paragraph() {
         System.out.println();
     }
